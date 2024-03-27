@@ -1,6 +1,5 @@
 ﻿using Blue.Pilot.Domain.Catalog;
 using Blue.Pilot.Domain.Orders;
-using Blue.Pilot.Domain.Orders.Item;
 using Microsoft.EntityFrameworkCore;
 
 namespace Blue.Pilot.Data {
@@ -9,6 +8,8 @@ namespace Blue.Pilot.Data {
         { }
 
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

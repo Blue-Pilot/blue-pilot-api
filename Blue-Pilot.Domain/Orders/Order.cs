@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using Blue.Pilot.Domain.Orders.Item;
+using Blue.Pilot.Domain.Orders;
 
 namespace Blue.Pilot.Domain.Orders {
     public class Order {

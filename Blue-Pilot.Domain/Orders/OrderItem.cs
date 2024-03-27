@@ -1,7 +1,6 @@
 using Blue.Pilot.Domain.Catalog;
 
-
-namespace Blue.Pilot.Domain.Orders.Item {
+namespace Blue.Pilot.Domain.Orders {
     public class OrderItem {
         public int Id { get; set; }
         public OrderItem Item { get; set; }

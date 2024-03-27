@@ -46,6 +46,7 @@ namespace Blue.Pilot.Api.Controllers {
             return Ok(item);
         }
 
+        [HttpPut("{id:int}")]
         public IActionResult PutItem(int id, [FromBody] Item item) {
             if (id != item.Id) {
                 return BadRequest();
