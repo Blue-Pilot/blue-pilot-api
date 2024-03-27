@@ -1,4 +1,6 @@
 ﻿using Blue.Pilot.Domain.Catalog;
+using Blue.Pilot.Domain.Orders;
+using Blue.Pilot.Domain.Orders.Item;
 using Microsoft.EntityFrameworkCore;
 
 namespace Blue.Pilot.Data {
