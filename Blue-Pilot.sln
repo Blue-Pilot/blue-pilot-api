@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue-Pilot.Domain", "Blue-P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLUE-PILOT.Data", "BLUE-PILOT.Data\BLUE-PILOT.Data.csproj", "{C9A06B4B-81FE-4BAD-AA20-855433F52804}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3D18809A-9D0F-489A-8D45-4CC4C1831CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blue-Pilot.Domain.Tests", "tests\Blue-Pilot.Domain.Tests\Blue-Pilot.Domain.Tests.csproj", "{820D8063-5266-48A6-9C9A-A399DFDCE15F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{C9A06B4B-81FE-4BAD-AA20-855433F52804}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9A06B4B-81FE-4BAD-AA20-855433F52804}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9A06B4B-81FE-4BAD-AA20-855433F52804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820D8063-5266-48A6-9C9A-A399DFDCE15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820D8063-5266-48A6-9C9A-A399DFDCE15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820D8063-5266-48A6-9C9A-A399DFDCE15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820D8063-5266-48A6-9C9A-A399DFDCE15F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{820D8063-5266-48A6-9C9A-A399DFDCE15F} = {3D18809A-9D0F-489A-8D45-4CC4C1831CA9}
 	EndGlobalSection
 EndGlobal
