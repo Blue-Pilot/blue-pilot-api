@@ -21,4 +21,8 @@
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Blue-Pilot.Domain\Blue-Pilot.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
