@@ -3,6 +3,7 @@ using Blue.Pilot.Domain.Catalog;
 using Blue.Pilot.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Blue.Pilot.Api.Controllers {
     [ApiController]
@@ -63,6 +64,7 @@ namespace Blue.Pilot.Api.Controllers {
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id) {
             var item = _db.Items.Find(id);
             if (item == null) {
