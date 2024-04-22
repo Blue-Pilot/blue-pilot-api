@@ -9,7 +9,6 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-# this comment should not work
 name: "CodeQL"
 
 on:
