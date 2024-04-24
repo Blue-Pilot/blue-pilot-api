@@ -4,10 +4,16 @@ using Microsoft.EntityFrameworkCore.Sqlite;
 
 var builder = WebApplication.CreateBuilder(args);
 
+string storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
+    throw new ArgumentNullException("ConnectionString:StoreConnection");
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<StoreContext>(options => options.UseSqlite("Data Source../Registar.sqlite", b => b.MigrationsAssembly("Blue.Pilot.Api")));
+builder.Services.AddDbContext<StoreContext>(options => 
+    options.UseSqlite(storeConnectionString,
+    b => b.MigrationsAssembly("Blue.Pilot.Api")));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 
